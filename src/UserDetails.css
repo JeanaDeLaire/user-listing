@@ -1,0 +1,31 @@
+.UserDetails-header {
+  background-color:#708090;
+  border-radius: 30px;
+}
+
+.UserDetails-details {
+  font-weight: 600;
+}
+
+.UserDetails-number {
+  padding-left: 30px;
+}
+
+.UserDetails-past-birthday {
+  color: red;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+ }
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
