@@ -48,7 +48,7 @@ class RandomUsers extends Component {
         } else if (date < birthday) {
             result = <span>has yet to occur this year</span>
         } else {
-            result = <span className="RandomUser-past-birthday">already happened</span>
+            result = <span className="RandomUsers-past-birthday">already happened</span>
         }
         return result;
     }
