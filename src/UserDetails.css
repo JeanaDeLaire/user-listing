@@ -1,6 +1,7 @@
 .UserDetails-header {
   background-color:#708090;
   border-radius: 30px;
+  font-family: arial, sans-serif;
 }
 
 .UserDetails-details {
@@ -9,6 +10,8 @@
 
 .UserDetails-number {
   padding-left: 30px;
+  font-weight: 500;
+  color: #282c34;
 }
 
 table {
@@ -19,8 +22,26 @@ table {
 th, td {
   text-align: left;
   padding: 16px;
+  font-size: 20px;
 }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #282c34;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+button:hover {
+  text-decoration: underline;
 }

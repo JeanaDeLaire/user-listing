@@ -8,10 +8,9 @@ class RandomUsers extends Component {
     state = {
         users: [],
         date: {},
-        count: 0,
     }
 
-
+    // call 20 users only once on component render and get formatted current date object
     componentDidMount() {
         this.getUsers()
         this.getDate()
@@ -35,8 +34,20 @@ class RandomUsers extends Component {
         })
     }
 
-    length = 10;
-    dateFormat = (date) => date.substring(0, this.length);
+    // sort helper for one level nested data (ex: user.gender)
+    sortUsers = (trait) => {
+        const sortedUsers = this.state.users.sort((a, b) => (a[trait] > b[trait]) ? 1 : -1)
+        this.setState({ users: sortedUsers })
+    }
+
+    // sort helper for deep nested data (ex: user.location.country)
+    sortUsersByNestedData = (keyA, keyB) => {
+        const sortedUsers = this.state.users.sort((a, b) => (a[keyA][keyB] > b[keyA][keyB]) ? 1 : -1)
+        this.setState({ users: sortedUsers })
+    }
+
+    // helper to format dob to compare to current date
+    dateFormat = (date) => date.substring(0, 10);
 
     checkBirthday = (date, dob) => {
         const mm = dob.slice(5, 7)
@@ -57,11 +68,13 @@ class RandomUsers extends Component {
 
         return (
             <div className="RandomUsers-Wrapper">
-                <UserDetails 
+                <UserDetails
                     date={this.state.date}
                     users={this.state.users}
-                    dateFormat={this.dateFormat} 
+                    dateFormat={this.dateFormat}
                     checkBirthday={this.checkBirthday}
+                    sortUsers={this.sortUsers}
+                    sortUsersByNestedData={this.sortUsersByNestedData}
                 />
             </div>
         )
