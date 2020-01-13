@@ -9,7 +9,6 @@
 }
 
 .UserDetails-number {
-  padding-left: 30px;
   font-weight: 500;
   color: #282c34;
 }
@@ -17,12 +16,17 @@
 table {
   border-spacing: 0;
   width: 100%;
+  text-align: left;
  }
 
-th, td {
-  text-align: left;
-  padding: 16px;
+th {
+  padding: 12px;
   font-size: calc(8px + 2vmin);
+}
+
+td {
+  padding: 15px;
+  font-size: 18px;
 }
 
 tr:nth-child(even) {

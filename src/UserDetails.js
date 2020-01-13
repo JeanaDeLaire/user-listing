@@ -17,7 +17,7 @@ export const UserDetails = (props) => {
                     <th><button onClick={() => props.sortUsersByNestedData("name", "first")}>First Name {sortIcon}</button></th>
                     <th><button onClick={() => props.sortUsersByNestedData("name", "last")}>Last Name {sortIcon}</button></th>
                     <th><button onClick={() => props.sortUsers("gender")}>Gender {sortIcon}</button></th>
-                    <th><button onClick={() => props.sortUsersByNestedData("location", "country")}>Country of Origin {sortIcon}</button></th>
+                    <th><button onClick={() => props.sortUsersByNestedData("location", "country")}>Country {sortIcon}</button></th>
                     <th>DOB</th>
                     <th>Birthday Status</th>
                 </tr>

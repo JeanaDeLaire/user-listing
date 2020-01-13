@@ -1,13 +1,12 @@
 .RandomUsers-Wrapper {
   overflow-x: auto;
-  width: 95vw;
-  margin: 20px auto;
+  width: 100%;
 }
 
 .RandomUsers-today-birthday {
-  color: #0f0;
+  color: #16a57a 
 }
 
 .RandomUsers-past-birthday {
-  color: #f00;
+  color: rgb(151, 43, 43);
 }
