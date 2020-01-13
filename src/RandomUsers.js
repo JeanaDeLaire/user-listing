@@ -55,7 +55,7 @@ class RandomUsers extends Component {
         const birthday = mm + dd
         let result = ''
         if (date === birthday) {
-            result = <span>is today!</span>
+            result = <span className="RandomUsers-today-birthday">is today!</span>
         } else if (date < birthday) {
             result = <span>has yet to occur this year</span>
         } else {

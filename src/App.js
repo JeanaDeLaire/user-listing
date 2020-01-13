@@ -3,7 +3,7 @@ import React from 'react';
 import RandomUsers from './RandomUsers.js'
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSort, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faUsers } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (

@@ -4,6 +4,10 @@
   margin: 20px auto;
 }
 
+.RandomUsers-today-birthday {
+  color: #0f0;
+}
+
 .RandomUsers-past-birthday {
   color: #f00;
 }

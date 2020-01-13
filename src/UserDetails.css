@@ -22,7 +22,7 @@ table {
 th, td {
   text-align: left;
   padding: 16px;
-  font-size: 20px;
+  font-size: calc(8px + 2vmin);
 }
 
 tr:nth-child(even) {
@@ -39,7 +39,7 @@ button {
   color: #282c34;
   cursor: pointer;
   font-weight: 600;
-  font-size: 20px;
+  font-size: calc(8px + 2vmin);
 }
 
 button:hover {

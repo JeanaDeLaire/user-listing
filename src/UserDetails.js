@@ -19,7 +19,7 @@ export const UserDetails = (props) => {
                     <th><button onClick={() => props.sortUsers("gender")}>Gender {sortIcon}</button></th>
                     <th><button onClick={() => props.sortUsersByNestedData("location", "country")}>Country of Origin {sortIcon}</button></th>
                     <th>DOB</th>
-                    <th>This Year's Birthday Status</th>
+                    <th>Birthday Status</th>
                 </tr>
             </thead>
             <tbody>
